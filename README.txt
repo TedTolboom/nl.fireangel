@@ -1,0 +1,1 @@
+Makes Homey work with the Z-Wave version of the FireAngel CO Sensor.

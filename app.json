@@ -1,0 +1,138 @@
+{
+  "id": "nl.fireangel",
+  "brandColor": "#000000",
+  "sdk": 2,
+  "name": {
+    "en": "FireAngel",
+    "nl": "FireAngel"
+  },
+  "version": "1.0.0",
+  "compatibility": ">=3.0.0",
+  "description": {
+    "en": "FireAngel products support for Homey",
+    "nl": "FireAngel producten ondersteuning voor Homey"
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "paypal@momotica.nl"
+      }
+    }
+  },
+  "category": [
+    "security"
+  ],
+  "tags": {
+    "en": [
+      "CO Sensor",
+      "Smoke Sensor"
+    ],
+    "nl": [
+      "CO Sensor",
+      "Rook melder"
+    ]
+  },
+  "images": {
+    "large": "/assets/images/large.jpg",
+    "small": "/assets/images/small.jpg"
+  },
+  "author": {
+    "name": "Momotica",
+    "email": "menno@momotica.nl"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Menno Bliek (Momotica)",
+        "email": "menno@momotica.nl"
+      }
+    ]
+  },
+  "flow": {
+    "triggers": [
+      {
+        "id": "battery_alarm",
+        "deprecated": true,
+        "title": {
+          "en": "The battery alarm turned on",
+          "nl": "De batterijwaarschuwing gaat aan"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=CO"
+          },
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=CO"
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "id": "CO",
+      "name": {
+        "en": "CO Sensor NM-CO-10X-INT",
+        "nl": "CO Sensor NM-CO-10X-INT"
+      },
+      "zwave": {
+        "manufacturerId": [
+          623
+        ],
+        "productTypeId": [
+          1
+        ],
+        "productId": [
+          3
+        ],
+        "learnmode": {
+          "instruction": {
+            "en": "Press the Z-Wave button three times within 1.5 seconds. The led flashes red.",
+            "nl": "Druk 3 keer op de Z-Wave knop binnen 1.5 seconden, de LED knipperd rood."
+          }
+        },
+        "associationGroups": [
+          3
+        ],
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "Lifeline",
+              "nl": "Lifeline"
+            }
+          },
+          "2": {
+            "hint": {
+              "en": "Sensor Basic Report",
+              "nl": "Sensor Basic Report"
+            }
+          },
+          "3": {
+            "hint": {
+              "en": "Sensor Notification Report",
+              "nl": "Sensor Notificatie Report"
+            }
+          }
+        }
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_co",
+        "measure_battery"
+      ],
+      "images": {
+        "large": "/drivers/CO/assets/images/large.jpg",
+        "small": "/drivers/CO/assets/images/small.jpg"
+      },
+      "energy": {
+        "batteries": [
+          "CR2"
+        ]
+      }
+    }
+  ]
+}

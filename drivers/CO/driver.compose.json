@@ -1,0 +1,61 @@
+{
+  "id": "CO",
+  "name": {
+    "en": "CO Sensor NM-CO-10X-INT",
+    "nl": "CO Sensor NM-CO-10X-INT"
+  },
+  "zwave": {
+    "manufacturerId": [
+      623
+    ],
+    "productTypeId": [
+      1
+    ],
+    "productId": [
+      3
+    ],
+    "learnmode": {
+      "instruction": {
+        "en": "Press the Z-Wave button three times within 1.5 seconds. The led flashes red.",
+        "nl": "Druk 3 keer op de Z-Wave knop binnen 1.5 seconden, de LED knipperd rood."
+      }
+    },
+    "associationGroups": [
+          3
+        ],
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "Lifeline",
+              "nl": "Lifeline"
+            }
+          },
+          "2": {
+            "hint": {
+              "en": "Sensor Basic Report",
+              "nl": "Sensor Basic Report"
+            }
+          },
+          "3": {
+            "hint": {
+              "en": "Sensor Notification Report",
+              "nl": "Sensor Notificatie Report"
+            }
+          }
+        }
+  },
+  "class": "sensor",
+  "capabilities": [
+    "alarm_co",
+    "measure_battery"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.jpg",
+    "small": "{{driverAssetsPath}}/images/small.jpg"
+  },
+  "energy": {
+        "batteries": [
+          "CR2"
+        ]
+      }
+}
