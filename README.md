@@ -1,5 +1,5 @@
-# FireAngel CO Sensor support for Athom Homey  
-Makes Homey work with the Z-Wave version of the FireAngel CO Sensor.
+# FireAngel  
+This app adds support for FireAngel Z-Wave devices in Homey.
    
 ## Supported devices with most common parameters:
 * FireAngel CO Sensor NM-CO-10X-INT
