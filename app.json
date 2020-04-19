@@ -6,7 +6,7 @@
     "en": "FireAngel",
     "nl": "FireAngel"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "compatibility": ">=3.0.0",
   "description": {
     "en": "FireAngel products support for Homey",
