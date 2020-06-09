@@ -11,5 +11,8 @@
   },
   "2.0.0": {
     "en": "Added support for Smoke Sensor"
+  },
+  "2.1.0": {
+    "en": "added support for distinction between test button and real smoke alarm"
   }
 }
