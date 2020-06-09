@@ -14,7 +14,7 @@ class FireAngelSMOKE extends ZwaveDevice {
 
         this.registerCapability('alarm_smoke', 'NOTIFICATION', {
 			getOpts: {
-				getOnStart: true, // get the initial value on app start
+				getOnOnline: true, // get the initial value on app start
 				//pollInterval: 'poll_interval' // maps to device settings
 			},
 			report: 'NOTIFICATION_REPORT',
@@ -30,7 +30,7 @@ class FireAngelSMOKE extends ZwaveDevice {
 
         this.registerCapability('smoke_test', 'NOTIFICATION', {
 			getOpts: {
-				getOnStart: true, // get the initial value on app start
+				getOnOnline: true, // get the initial value on app start
 				//pollInterval: 'poll_interval' // maps to device settings
 			},
 			report: 'NOTIFICATION_REPORT',
