@@ -1,12 +1,12 @@
 {
 	"name": "nl.fireangel",
 	"version": "1.0.0",
-	"description": "This app adds support for the Z-wave devices made by Danfoss (http://www.danfoss.com/).",
+	"description": "This app adds support for the Z-wave devices made by FireAngel.",
 	"main": "app.js",
 	"requires": true,
 	"dependencies": {
 		"homey-log": "^1.0.5",
-		"homey-meshdriver": "^1.3.22"
+		"homey-meshdriver": "^1.3.24"
 	},
 	"devDependencies": {},
 	"scripts": {

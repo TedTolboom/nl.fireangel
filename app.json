@@ -116,6 +116,21 @@
         "en": "Smoke detector SM-F-1EU and ST-630-INT",
         "nl": "Rookmelder SM-F-1EU en ST-630-INT"
       },
+      "capabilities": [
+        "alarm_smoke",
+        "measure_battery",
+        "smoke_test"
+      ],
+      "class": "sensor",
+      "images": {
+        "large": "/drivers/Smoke/assets/images/large.jpg",
+        "small": "/drivers/Smoke/assets/images/small.jpg"
+      },
+      "energy": {
+        "batteries": [
+          "CR2"
+        ]
+      },
       "zwave": {
         "manufacturerId": [
           623
@@ -155,20 +170,6 @@
             }
           }
         }
-      },
-      "class": "sensor",
-      "capabilities": [
-        "alarm_smoke",
-        "measure_battery"
-      ],
-      "images": {
-        "large": "/drivers/Smoke/assets/images/large.jpg",
-        "small": "/drivers/Smoke/assets/images/small.jpg"
-      },
-      "energy": {
-        "batteries": [
-          "CR2"
-        ]
       }
     }
   ]
