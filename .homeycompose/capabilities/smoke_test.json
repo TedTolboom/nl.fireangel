@@ -1,0 +1,11 @@
+{
+      "type": "boolean",
+      "title": {
+        "en": "Smoke sensor test",
+        "nl": "Rookmelder test"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "uiQuickAction": false
+      }
