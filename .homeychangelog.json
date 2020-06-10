@@ -14,5 +14,8 @@
   },
   "2.1.0": {
     "en": "added support for distinction between test button and real smoke alarm"
+  },
+  "2.1.1": {
+    "en": "Added support for flow trigger when using test button"
   }
 }
