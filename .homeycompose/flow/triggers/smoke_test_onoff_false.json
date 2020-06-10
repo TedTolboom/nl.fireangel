@@ -1,0 +1,14 @@
+{
+  "id": "smoke_test_onoff_false",
+  "title": {
+    "en": "Smoke Sensor test deactivated",
+    "nl": "Rookmelder test gedeactiveerd"
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=Smoke"
+    }
+  ]
+}

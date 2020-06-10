@@ -48,6 +48,38 @@
       }
     ]
   },
+  "flow": {
+    "triggers": [
+      {
+        "id": "smoke_test_onoff_false",
+        "title": {
+          "en": "Smoke Sensor test deactivated",
+          "nl": "Rookmelder test gedeactiveerd"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=Smoke"
+          }
+        ]
+      },
+      {
+        "id": "smoke_test_onoff_true",
+        "title": {
+          "en": "Smoke Sensor test activated",
+          "nl": "Rookmelder test geactiveerd"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=Smoke"
+          }
+        ]
+      }
+    ]
+  },
   "drivers": [
     {
       "id": "NM-CO-10X-INT",
@@ -182,6 +214,15 @@
       },
       "getable": true,
       "setable": false,
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Test activated",
+        "nl": "Test geactiveerd"
+      },
+      "insightsTitleFalse": {
+        "en": "Test deactivated",
+        "nl": "Test gedeactiveerd"
+      },
       "uiComponent": "sensor",
       "icon": "/assets/smoke_test.svg",
       "uiQuickAction": false

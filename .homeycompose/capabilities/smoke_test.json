@@ -6,6 +6,15 @@
       },
       "getable": true,
       "setable": false,
+      "insights": true,
+      "insightsTitleTrue": { 
+      "en": "Test activated",
+      "nl": "Test geactiveerd" 
+      },
+      "insightsTitleFalse": { 
+      "en": "Test deactivated",
+      "nl": "Test gedeactiveerd" 
+      },
       "uiComponent": "sensor",
       "icon": "/assets/smoke_test.svg",
       "uiQuickAction": false

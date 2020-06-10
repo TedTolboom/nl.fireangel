@@ -1,5 +1,6 @@
 'use strict';
 
+const Homey = require('homey');
 const ZwaveDevice = require('homey-meshdriver').ZwaveDevice;
 
 class FireAngelSMOKE extends ZwaveDevice {
@@ -36,13 +37,23 @@ class FireAngelSMOKE extends ZwaveDevice {
 			report: 'NOTIFICATION_REPORT',
 			reportParser: report => {
 				if (report && report.hasOwnProperty('Notification Type') && report.hasOwnProperty('Event (Parsed)')) {
-					if (report['Event (Parsed)'] === 'Smoke Alarm Test' && report['Notification Type'] === 'Smoke') return true; 
-					if (report['Event (Parsed)'] === 'Event inactive' && report['Notification Type'] === 'Smoke') return false;
+					if (report['Event (Parsed)'] === 'Smoke Alarm Test' && report['Notification Type'] === 'Smoke') {
+					this._triggerSmokeTestTrue.trigger(this).catch(this.error)
+					return true; 
+				}
+					if (report['Event (Parsed)'] === 'Event inactive' && report['Notification Type'] === 'Smoke'); {
+					this._triggerSmokeTestFalse.trigger(this).catch(this.error)
+					return false; 
+				}
 				
 				return null;
 				}	
 			},
 		});
+
+		// Register triggers for flows
+		this._triggerSmokeTestTrue = new Homey.FlowCardTriggerDevice('smoke_test_onoff_true').register();
+		this._triggerSmokeTestFalse = new Homey.FlowCardTriggerDevice('smoke_test_onoff_false').register();
     }
 }
 
