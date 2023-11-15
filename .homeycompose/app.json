@@ -1,13 +1,13 @@
 {
   "id": "nl.fireangel",
-  "brandColor": "#000000",
-  "sdk": 2,
+  "brandColor": "#ff6e21",
+  "sdk": 3,
   "name": {
     "en": "FireAngel",
     "nl": "FireAngel"
   },
-  "version": "2.1.1",
-  "compatibility": ">=3.0.0",
+  "version": "3.0.0",
+  "compatibility": ">=5.0.0",
   "description": {
     "en": "A smart home with life saving innovations",
     "nl": "Een smart home met levensreddende innovaties"
@@ -24,12 +24,12 @@
   ],
   "tags": {
     "en": [
-      "CO Sensor",
-      "Smoke Sensor"
+      "Carbon Monoxide Alarm",
+      "Smoke Alarm"
     ],
     "nl": [
-      "CO Sensor",
-      "Rook melder"
+      "Koolmonoxidemelder",
+      "Rookmelder"
     ]
   },
   "images": {
