@@ -66,7 +66,7 @@ typings
 #Backup
 *.DS_Store
 
-
-
-# Added by Homey CLI
+#Homey
+/env.json
+/node_modules/
 /.homeybuild/
