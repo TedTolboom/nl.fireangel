@@ -4,19 +4,6 @@
     "en": "Smoke detector SM-F-1EU and ST-630-INT",
     "nl": "Rookmelder SM-F-1EU en ST-630-INT"
   },
-      "capabilities": {
-    "smoke_test": {
-      "type": "boolean",
-      "title": {
-        "en": "Smoke sensor test",
-        "nl": "Rookmelder test"
-      },
-      "getable": true,
-      "setable": false,
-      "uiComponent": "sensor",
-      "uiQuickAction": false
-      }
-    },
   "class": "sensor",
   "capabilities": [
     "alarm_smoke",
@@ -28,11 +15,11 @@
     "small": "{{driverAssetsPath}}/images/small.jpg"
   },
   "energy": {
-        "batteries": [
-          "CR2"
-        ]
-      },
-      "zwave": {
+    "batteries": [
+      "CR2"
+    ]
+  },
+  "zwave": {
     "manufacturerId": [
       623
     ],
@@ -49,27 +36,27 @@
       }
     },
     "associationGroups": [
-          3
-        ],
-        "associationGroupsOptions": {
-          "1": {
-            "hint": {
-              "en": "Lifeline",
-              "nl": "Lifeline"
-            }
-          },
-          "2": {
-            "hint": {
-              "en": "Sensor Basic Report",
-              "nl": "Sensor Basic Report"
-            }
-          },
-          "3": {
-            "hint": {
-              "en": "Sensor Notification Report",
-              "nl": "Sensor Notificatie Report"
-            }
-          }
+      3
+    ],
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "Lifeline",
+          "nl": "Lifeline"
         }
+      },
+      "2": {
+        "hint": {
+          "en": "Sensor Basic Report",
+          "nl": "Sensor Basic Report"
+        }
+      },
+      "3": {
+        "hint": {
+          "en": "Sensor Notification Report",
+          "nl": "Sensor Notificatie Report"
+        }
+      }
+    }
   }
 }
