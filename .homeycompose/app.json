@@ -1,0 +1,55 @@
+{
+  "id": "nl.fireangel",
+  "brandColor": "#000000",
+  "sdk": 3,
+  "name": {
+    "en": "FireAngel",
+    "nl": "FireAngel"
+  },
+  "version": "3.0.0",
+  "compatibility": ">=8.0.0",
+  "description": {
+    "en": "A smart home with life saving innovations",
+    "nl": "Een smart home met levensreddende innovaties"
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "TedTolboom"
+      }
+    }
+  },
+  "category": [
+    "security"
+  ],
+  "tags": {
+    "en": [
+      "CO Sensor",
+      "Smoke Sensor"
+    ],
+    "nl": [
+      "CO Sensor",
+      "Rook melder"
+    ]
+  },
+  "images": {
+    "large": "/assets/images/large.jpg",
+    "small": "/assets/images/small.jpg"
+  },
+  "author": {
+    "name": "Ted Tolboom",
+    "email": "dTNL.Homey@gmail.com"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Ted Tolboom",
+        "email": "dTNL.Homey@gmail.com"
+      },
+      {
+        "name": "Menno Bliek (Momotica)",
+        "email": "menno@momotica.nl"
+      }
+    ]
+  }
+}

@@ -1,21 +1,21 @@
 {
-      "type": "boolean",
-      "title": {
-        "en": "Smoke sensor test",
-        "nl": "Rookmelder test"
-      },
-      "getable": true,
-      "setable": false,
-      "insights": true,
-      "insightsTitleTrue": { 
-      "en": "Test activated",
-      "nl": "Test geactiveerd" 
-      },
-      "insightsTitleFalse": { 
-      "en": "Test deactivated",
-      "nl": "Test gedeactiveerd" 
-      },
-      "uiComponent": "sensor",
-      "icon": "/assets/smoke_test.svg",
-      "uiQuickAction": false
-      }
+  "type": "boolean",
+  "title": {
+    "en": "Smoke sensor test",
+    "nl": "Rookmelder test"
+  },
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "insightsTitleTrue": {
+    "en": "Test activated",
+    "nl": "Test geactiveerd"
+  },
+  "insightsTitleFalse": {
+    "en": "Test deactivated",
+    "nl": "Test gedeactiveerd"
+  },
+  "uiComponent": "sensor",
+  "icon": "/assets/smoke_test.svg",
+  "uiQuickAction": false
+  }
